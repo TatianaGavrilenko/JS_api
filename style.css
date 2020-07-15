@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #d8de97;
+    font-size: 20px;
+    font-family: serif;
+}
+
+.recipePuppy{
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.searchBut{
+    border: 0;
+    padding: 5px;
+
+}
+
+input{
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.inputTitle{
+    font-weight: bold;
+    padding: 10px;
+}
+
+li{
+    padding-left: 30px;
+    background-color: #b1d466;
+}
+
+li:hover{
+    background-color: #0000;
+}

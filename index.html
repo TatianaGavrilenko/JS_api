@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body id="body">
+    <div class="recipePuppy">
+        <div class="search">
+            <img src="images/logo.png" alt="">
+            <form class="inputSearch" method="get">
+                 <div class="inputTitle">
+                    Search by Ingredients(comma separated):
+                </div>
+                 <input type="text" name="i" id="addIng" size=50  value="" />
+                <button class="searchBut" type="submit" value= "search">Search</button>
+            </form>
+        </div>
+        <div class="recipe_response">
+            <p id="items"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
