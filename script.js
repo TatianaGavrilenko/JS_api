@@ -1,7 +1,7 @@
 const recipePuppy = function  () {
 
     let form = document.querySelector('.inputSearch'), 
-        recipe_result = document.querySelector('.recipe_response');
+        recipe_result = document.querySelector('.recipe_response ul');
 
     if(!form || !recipe_result) return;
 
@@ -34,11 +34,10 @@ const recipePuppy = function  () {
             data.results.forEach(function(item){
                 let pElem = document.createElement('li');
                 
-                let elemItems = `${item.title}. Here you can find the recipe: ${item.href}.  These are the ingredients: ${item.ingredients}`;
+                let elemItems = `
+                <a href= "${item.href}" target="_blank">${item.title}</a>. These are the ingredients: ${item.ingredients}`;
 
-                let wholeList =  document.createTextNode(elemItems);
-
-                pElem.appendChild(wholeList);
+                pElem.innerHTML = elemItems;
 
                 recipe_result.appendChild(pElem);
                 let element = document.getElementById('body');
