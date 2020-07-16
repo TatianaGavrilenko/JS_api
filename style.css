@@ -4,9 +4,18 @@
 }
 
 body{
-    background-color: #d8de97;
+    /*background-color: #d8de97;
     font-size: 20px;
-    font-family: serif;
+    font-family: serif;*/
+    background-image: url(images/1.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+h1{
+    color:yellow;
+    padding-top: 60px;
+    padding-right: 30px;
 }
 
 .recipePuppy{
@@ -19,7 +28,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .searchBut{
@@ -37,6 +46,12 @@ input{
 .inputTitle{
     font-weight: bold;
     padding: 10px;
+    font-size: 30px;
+    color: #16f7b4;
+}
+
+ul{
+    padding-top: 30px;
 }
 
 li{
@@ -45,5 +60,5 @@ li{
 }
 
 li:hover{
-    background-color: #0000;
+    background-color: #16f7b4;
 }
